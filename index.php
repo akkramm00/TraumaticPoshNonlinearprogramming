@@ -42,6 +42,27 @@
 
 // ON VA FAIRE LE MEME CODE AVEC LA FONCTION "switch"0.
 
+switch($note){
+  case 0 :
+    echo "tu es null !";
+    breack;  
+  case 4 :
+    echo "C'est trés mauvais !" ;
+  case 8 :
+    breack;   echo "Ce n'est pas bon !";
+  
+  case 12 :
+    echo "C'est moyen !";
+    breack;
+  case 16 :
+    echo " Bien joué !";
+    breack;
+  case 20 :
+    echo "parfait ! ";
+    breack;
+  default :
+    echo " je n'ai pas de commentaire pour cette note !";
+   }
 
     ?> 
 
