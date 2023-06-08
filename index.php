@@ -23,7 +23,7 @@
       }
     </style>
     <?php 
-    $note = 16;
+    $note = 18;
   if($note == 0){
     echo "tu es null !";
   }else if($note == 4) {
@@ -45,22 +45,22 @@
 switch($note){
   case 0 :
     echo "tu es null !";
-    breack;  
+    break;  
   case 4 :
     echo "C'est trés mauvais !" ;
-    breack; 
+    break; 
   case 8 :
     echo "Ce n'est pas bon !";
-    breack; 
+    break; 
   case 12 :
     echo "C'est moyen !";
-    breack;
+    break;
   case 16 :
     echo " Bien joué !";
-    breack;
+    break;
   case 20 :
     echo "parfait ! ";
-    breack;
+    break;
   default :
     echo " je n'ai pas de commentaire pour cette note !";
    }
