@@ -4,6 +4,8 @@
   </head>
   <body>
   <h1>Les conditions !</h1>
+  <h3>La condition switch!</h3>
+    
     <style>
       body{
         text-align:center;
@@ -16,33 +18,32 @@
       h1{
         color:green;
       }
+      h3{
+        color:red;
+      }
     </style>
     <?php 
-  echo "LA STRUCTURE IF ...ELSE <br>";
-  $heure_connexion = 15;
- if($heure_connexion < 18) {
-  echo "passez une bonne journée <br/>" ;
-   $journee = "oui";
-  }else{
-    echo "passez bonne soirée <br/>";
-   $journee = "Non";
+    $note = 16;
+  if($note == 0){
+    echo "tu es null !";
+  }else if($note == 4) {
+    echo "C'est trés mauvais !";
+  }elseif ($note == 8){
+    echo " Ce n'est pas bon !";
+  }elseif($note == 12){
+    echo "C'est moyen !";
+  }elseif($note == 16){
+    echo "Bien joué !";
+  }elseif( $note == 20){
+    echo "Parfait !"; 
+  }else{ // =>'else' prend en cahrge tout les cas incohérent que l'utilisateur peut saisir en cas d'un site web //
+    echo "Je n'ai pas de commentaire";
   }
-  echo 'fait_il jour? la reponse est ' . $journee. '.  <br><br>';
- // la structure if ...ellse if ...else :
-$note = 0 ;
-$difficulte = "facile";
-if ($note <= 12 && $difficulte == "facile"){
-  echo "vous auriez pu faire mieux";
-}else if($note> 12 && $difficulte == "facile"){
-  echo "Pas mal ,mais c'était facile !";
-}else if($note <= 12 && $difficulte == "difficile") {
-  echo "ne vous découragez pas ,c'était difficile!";
-} else {
-  echo "bravo" ;
-  
-}
 
-?> 
+// ON VA FAIRE LE MEME CODE AVEC LA FONCTION "switch"0.
+
+
+    ?> 
 
   <!--
   This script places a badge on your repl's full-browser view back to your repl's cover
