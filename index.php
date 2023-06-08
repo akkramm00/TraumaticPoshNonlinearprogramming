@@ -48,9 +48,10 @@ switch($note){
     breack;  
   case 4 :
     echo "C'est trés mauvais !" ;
+    breack; 
   case 8 :
-    breack;   echo "Ce n'est pas bon !";
-  
+    echo "Ce n'est pas bon !";
+    breack; 
   case 12 :
     echo "C'est moyen !";
     breack;
@@ -64,7 +65,7 @@ switch($note){
     echo " je n'ai pas de commentaire pour cette note !";
    }
 
-    ?> 
+  ?> 
 
   <!--
   This script places a badge on your repl's full-browser view back to your repl's cover
