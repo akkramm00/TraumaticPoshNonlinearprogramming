@@ -45,7 +45,7 @@
 switch($note){
   case 0 :
     echo "tu es null !";
-    break;  
+    break;  // break permet d'arreter la bocle une fois le resultat trouvé.
   case 4 :
     echo "C'est trés mauvais !" ;
     break; 
@@ -62,8 +62,41 @@ switch($note){
     echo "parfait ! ";
     break;
   default :
-    echo " je n'ai pas de commentaire pour cette note !";
+    echo " je n'ai pas de commentaire pour cette note ! <br/>";
    }
+?>
+<?php
+// ====================LES BOOLEENS ++++++++++++++++++++++++++++++++++
+$etudiant = true ;
+
+
+if($etudiant ==true){
+  echo "Vous etes etudiant !<br> ";
+}else{
+  echo "Vous n'etes pas etudiant ! <br>";
+}
+if($etudiant){            //______________________
+  echo "Vous etes etudiant ! <br>" ;//____________|____
+    }else {                         //____________|     \
+  echo "Vous n'etes pas etudiant! <br>";//________|     ====>method conseillé pour les bool
+          }                             //________|____ /
+                                        //________|
+// on peut meme ecrire :
+if(!$etudiant){   // le "!" désigne l'inverse => false.
+  echo "Vous n'etes pas etudiant !<br>";
+}else{
+  echo "Vous etes etudiant ! <br>";
+}
+
+// une autre méthode pour alterner du html et du php :méthode qui va nous faciliter la tache pour evietr d'échapper les caracteresavec des slaches.
+
+if($etudiant){
+
+  ?>
+  <p>Vous etes etudiant 3!  </p>
+  <?php
+};
+
 
   ?> 
 
