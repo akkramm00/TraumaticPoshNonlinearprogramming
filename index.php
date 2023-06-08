@@ -64,6 +64,9 @@ switch($note){
   default :
     echo " je n'ai pas de commentaire pour cette note ! <br/>";
    }
+
+
+
 ?>
 <?php
 // ====================LES BOOLEENS ++++++++++++++++++++++++++++++++++
@@ -96,6 +99,23 @@ if($etudiant){
   <p>Vous etes etudiant 3!  </p>
   <?php
 };
+
+
+
+// Pour une autorisation de connexion :
+$age = 22;
+
+if($age >= 18){
+  $autorisation = true ;
+}else{
+  $autorisation = false;
+}
+
+// la forme térnaire :
+$autorisation = ($age >= 18) ? true : false ; 
+
+
+
 
 
   ?> 
